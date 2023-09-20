@@ -36,7 +36,9 @@ function render(variables = {}) {
           <h1> ${variables.name == null ? "Name" : variables.name} 
           ${variables.lastname == null ? "Lastname" : variables.lastname} </h1>
           <h2> ${variables.role == null ? "Role" : variables.role} </h2>
-          <h3> ${variables.city == null ? "City" : variables.city} </h3>
+          <h3> ${variables.city == null ? "City" : variables.city}, ${
+    variables.country == null ? "Country" : variables.country
+  } </h3>
           <ul class="position-right">
             <li><a href="https://twitter.com/${
               variables.twitter == null ? " " : variables.twitter
@@ -72,7 +74,7 @@ window.onload = function() {
     socialMediaPosition: "position-left",
     // social media usernames
     twitter: null,
-    github: "alesanchezr",
+    github: null,
     linkedin: null,
     instagram: null,
     name: null,
